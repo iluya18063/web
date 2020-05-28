@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>LISishnik</title>
-	<link href="Data/style.css" rel="StyleSheet">
-</head>
+@extends('layout.header')
+@section('body')
 <body>
 	<div id="menu">
 		<img id="logotip" src="Data/icon/logo.png">
@@ -67,4 +62,4 @@
 	<script src="Data/JS.js"></script>
 </body>
 </html>
-	
+@endsection

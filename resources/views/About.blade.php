@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>LISishnik</title>
-	<link href="Data/style.css" rel="StyleSheet">
-</head>
+@extends('layout.header')
+@section('body')
 <body>
 	<div id="abblock">
 		<img id="abava" src="Data/ava.jpg">
@@ -73,4 +68,5 @@
 	<script src="Data/JS.js"></script>
 </body>
 </html>
-	
+@endsection
+

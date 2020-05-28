@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>LISishnik</title>
-	<link href="Data/style.css" rel="StyleSheet">
-</head>
+@extends('layout.header')
+@section('body')
 <body>
 	<div id="spisok2"></div>
 	<div id="abmenu">
@@ -38,4 +33,4 @@
 	<script src="Data/JS.js"></script>
 </body>
 </html>
-	
+@endsection
