@@ -49,21 +49,14 @@
 		<span>подписчики</span>
 	</div>
 	<div id="spisok">
+		<?php foreach($people as $ppl)
+			echo '
 		<div class="elemspis">
 			<img  src="Data/ava.jpg">
-			<span>Имя с Фамилией</span>
+			<span>',$ppl->login,'</span>
 			<div class="elemspisbt1">удалить</div>
-		</div>
-		<div class="elemspis">
-			<img  src="Data/ava.jpg">
-			<span>Имя с Фамилией</span>
-			<div class="elemspisbt1">удалить</div>
-		</div>
-		<div class="elemspis">
-			<img  src="Data/ava.jpg">
-			<span>Имя с Фамилией</span>
-			<div class="elemspisbt1">удалить</div>
-		</div>
+		</div>';
+		?>
 	</div>
 	<script src="Data/JS.js"></script>
 </body>

@@ -47,14 +47,18 @@
 	<div id="ostranice">
 		<img src="Data/icon/сообщения.png">
 		<span>сообщения</span>
-	</div>
+	</div>	
 	<div id="spisok">
+		<?php foreach($people as $ppl)
+		echo '
 		<div class="elemspis" onclick="namessage()">
 			<img  src="Data/ava.jpg">
-			<span>Имя с Фамилией</span>
+			<span>',$ppl->login,'</span>
 			<div class="elemspisbt2">прочитать</div>
-		</div>
+		</div>';
+		?>
 	</div>
+	
 	<script src="Data/JS.js"></script>
 </body>
 </html>

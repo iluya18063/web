@@ -24,10 +24,7 @@ Route::get('/Settings','ApiController@SettingsAction');
 Route::get('/Notice','ApiController@NoticeAction');
 Route::get('/Message','ApiController@MessageAction');
 Route::get('/Post','ApiController@PostAction');
+Route::get('/Test','ApiController@getDB');
 
-Route::get('/User','ApiController@getUsers');
-Route::get('/article','ApiController@getArticles');
-Route::get('/comment','ApiController@getComments');
-Route::get('/message','ApiController@getMessages');
 
 

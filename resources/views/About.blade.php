@@ -9,33 +9,10 @@
 		<div class="stat"><b>0</b>подписок</div>
 	</div>
 	<div id="abprostr">
-		<div class="abpost" onclick="napost(this)">
-			<img src="Data/posts/1 пост.jpg">
-		</div>
-		<div class="abpost" onclick="napost(this)">
-			<img src="Data/posts/2 пост.jpg">
-		</div>
-		<div class="abpost" onclick="napost(this)">
-			<img src="Data/posts/3 пост.jpg">
-		</div>
-		<div class="abpost" onclick="napost(this)">
-			<img src="Data/posts/4 пост.jpg">
-		</div>
-		<div class="abpost" onclick="napost(this)">
-			<img src="Data/posts/5 пост.jpg">
-		</div>
-		<div class="abpost" onclick="napost(this)">
-			<img src="Data/posts/6 пост.jpg">
-		</div>
-		<div class="abpost" onclick="napost(this)">
-			<img src="Data/posts/7 пост.jpg">
-		</div>
-		<div class="abpost" onclick="napost(this)">
-			<img src="Data/posts/8 пост.jpg">
-		</div>
-		<div class="abpost" onclick="napost(this)">
-			<img src="Data/posts/9 пост.jpg">
-		</div>
+	<?php foreach($posts as $post)
+		echo '<div class="abpost" onclick="napost(this)">
+			<img src="',$post->image,'">
+		</div>'; ?>
 	</div>
 	<div id="abmenu">
 		<img id="ablogo" src="Data/icon/logo.png">

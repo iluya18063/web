@@ -49,16 +49,14 @@
 		<span>поиск</span>
 	</div>
 	<div id="spisok">
+		<?php foreach($people as $ppl)
+			echo '
 		<div class="elemspis">
 			<img  src="Data/ava.jpg">
-			<span>Имя с Фамилией</span>
+			<span>',$ppl->login,'</span>
 			<div class="elemspisbt2">подписатся</div>
-		</div>
-		<div class="elemspis">
-			<img  src="Data/ava.jpg">
-			<span>Имя с Фамилией</span>
-			<div class="elemspisbt2">подписатся</div>
-		</div>
+		</div>';
+		?>
 	</div>
 	<script src="Data/JS.js"></script>
 </body>
