@@ -48,6 +48,9 @@ top:1vw;
 	margin:2% auto 2% auto;
 	border-radius:2vw;
 	cursor:default;
+	display:block;
+	border:none;
+	outline:none;
 	}
 	.perehod:hover {
 	background:#C1772F;
@@ -635,7 +638,7 @@ background:#FF8710;
 width:40vw;
 padding:0vw;
 border-radius:2vw;
-margin:10vw 0 0 29vw;
+margin:8vw auto 0 auto;
 padding:3vw 0 3vw 0;
 }
 	#logoblok img {
@@ -649,36 +652,29 @@ padding:3vw 0 3vw 0;
 	width:30vw;
 	margin:1vw auto 0 auto;
 	border-radius:2vw;	
-	}
-	.logtext input {
 	display:block;
-	float:left;
-	background:#FFA042;
-	height:3vw;
-	width:27vw;
-	border:none;
 	font-family:Arial;
-	font-size:1.2vw;
+	font-size:1.4vw;
 	color:#FFFFFF;
 	outline:none;
-	margin-left:1.5vw;
+	border:none;
+	text-align:center;
 	}
 	#inak {
 	background:#FFA042;
 	height:3vw;
-	width:10vw;
 	margin:2vw auto 0 auto;
 	border-radius:2vw;
+	outline:none;
+	font-family:Arial;
+	font-size:1.5vw;
+	color:#FFFFFF;
+	display:block;
+	cursor:default;
+	border:none;
+	padding:0 2vw 0 2vw;
 	}
 	#inak:hover {
 	background:#C1772F;
 	}
-	#inak span {
-	font-family:Arial;
-	font-size:1.5vw;
-	color:#FFFFFF;
-	text-align:center;
-	padding-top:0.65vw;
-	display:block;
-	cursor:default;
-	}
+	

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
 use App\article;
 use App\User;
 use App\comment;
@@ -17,13 +18,11 @@ class ApiController extends Controller
 	public function AboutAction(Request $request){
 		return view('About',['posts' => article::all()]);}
 	public function DirectAction(Request $request){
-	return view('Direct',['people' => User::all()]);}
+		return view('Direct',['people' => User::all()]);}
 	public function FollowersAction(Request $request){
 		return view('Followers',['people' => User::all()]);}
 	public function FollowingAction(Request $request){
 		return view('Following',['people' => User::all()]);}
-	public function SearchAction(Request $request){
-		return view('Search',['people' => User::all()]);}
 	public function SettingsAction(Request $request){
 		return view('Settings');}
 	public function NoticeAction(Request $request){
@@ -39,6 +38,12 @@ class ApiController extends Controller
 		Dump(comment::all());
 		Dump(message::all());
 	}
-	
+	public function SearchAction(Request $request){
+		$srchppl = (new searchController())->search($request->poisk);
+		if(!is_null($srchppl)){
+			return view('Search',['srchppl' => $srchppl]);
+		}
+	}
 }
 
+?>

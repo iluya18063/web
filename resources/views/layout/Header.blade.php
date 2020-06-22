@@ -5,5 +5,8 @@
 	<title>LISishnik</title>
 	<link href="Data/style.css" rel="StyleSheet">
 </head>
-@yield('body')
+<body>
+@yield('content')
+<script src="Data/JS.js"></script>
+</body>
 </html>

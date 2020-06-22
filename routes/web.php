@@ -25,6 +25,7 @@ Route::get('/Notice','ApiController@NoticeAction');
 Route::get('/Message','ApiController@MessageAction');
 Route::get('/Post','ApiController@PostAction');
 Route::get('/Test','ApiController@getDB');
-
-
-
+Route::get('/auth','authController@authorization');
+Route::get('/logout','authController@logout');
+Route::get('/Reg','authController@logoreg');
+Route::get('/registration','authController@registration');

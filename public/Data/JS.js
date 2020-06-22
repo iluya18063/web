@@ -20,7 +20,7 @@ function naabout(){
 	document.location.href="About";
 }
 function nalogo(){
-	document.location.href="\\";
+	document.location.href="logout";
 }
 function nasettings(){
 	document.location.href="Settings";

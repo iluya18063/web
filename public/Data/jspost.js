@@ -12,7 +12,7 @@ function komentariy(){
 	var comtext = document.createElement("span");
 	var input = document.querySelector("input");
 	koment.classList.add("komentavtor");
-	ava.src = "Data/ava.jpg";
+	ava.src = "Data/ava.png";
 	name.innerHTML = "Имя с фамилией";
 	name.classList.add("komentavtortext");
 	comtext.classList.add("komenttext");
