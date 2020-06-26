@@ -2,10 +2,12 @@
 background:#FFBE7D;
 margin:0;
 }
-input{
+input {
 padding:0;
 }
-
+form {
+margin:0;	
+}
 #menu {
 background:#FF8710;
 width:17%;
@@ -333,6 +335,7 @@ margin:0 1vw 1vw 1vw;
 	margin:1vw 0 1vw 0;
 	padding:1vw;
 	border-radius:2vw;
+	
 	}
 	.post:hover {
 	background:#FFA042;
@@ -345,30 +348,56 @@ margin:0 1vw 1vw 1vw;
 	}
 	.doppost{
 	height:2vw;
+	padding:0.5vw 0 0 0;
 	}
-	.avtor{
-	height:1.6vw;
-	width:1.6vw;
+	.avtor {
+	height:2vw;	
+	float:left;
+	border-radius:2vw;
+	padding:0.2vw;	
+	}
+	.avtor img{
+	height:1.8vw;
+	width:1.8vw;
 	border:0.1vw solid #C1402F;
 	float:left;
 	display:block;
-	padding:0.1vw;
 	border-radius:100%;
-	margin-top:0.4vw;
+	padding:0.1vw;
 	}
-	.doppost span{
+	.avtor span{
 	font-family:Arial;
-	font-size:1vw;
+	font-size:1.2vw;
 	color:#A83B00;
 	float:left;
 	display:block;
-	margin:0.9vw 0 0 0.3vw;
+	margin:0.3vw 0 0 0.3vw;
+	}
+	.avtor:hover{
+	background:#FFB164;	
+	}
+	.like{
+	height:1.6vw;
+	padding:0.4vw;
+	float:right;
+	border-radius:2vw;
+	}
+	.like span{
+	font-family:Arial;
+	font-size:1.2vw;
+	color:#A83B00;
+	margin-top:0.2vw;
+	display:block;
+	float:right;
 	}
 	.like img{
-	margin:0.6vw 0 0 0;
+	margin-left:0.5vw;
 	height:1.6vw;
 	display:block;
 	float:right;
+	}
+	.like:hover{
+	background:#FFB164;	
 	}
 
 .inpost{
@@ -480,13 +509,15 @@ border-radius:3vw;
 	}
 #komentbutton{
 background:#FFA042;
-height:2.2vw;
-width:2.2vw;
+height:2.5vw;
+width:2.5vw;
 border-radius:100%;
 display:block;
 float:right;
-padding:0.2vw;;
+padding:0.2vw;
 margin:0.2vw 0.2vw 0 0;
+border:none;
+outline:none;
 }
 #komentbutton:hover {
 background:#C1772F;

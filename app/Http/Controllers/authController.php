@@ -12,6 +12,7 @@ class authController extends Controller
     public function authorization(Request $request){
 		$user = User::where([['login',$request->login],['password',md5($request->password)]])->first();
 		if(is_null($user)){
+			echo"<script>alert('Такого пользователя не существует!');</script>";
 			return view('Logo');
 		}
 		Auth::login($user);
@@ -25,11 +26,12 @@ class authController extends Controller
 		return view('Reg');
 	}
 	public function registration(Request $request){
-		$user=User::where('email_address',$request->email_address)->first();
-		if(!is_null($user)){
+		if(!is_null(User::where('email_address',$request->email_address)->first())){
+			echo"<script>alert('Не введён адрес электронной почты!');</script>";
 			return view('Reg');
-		}	
-		$user = User::create(['login'=>$request->login,
+		}		
+		$user = User::create([
+		'login'=>$request->login,
 		'email_address'=>$request->email_address,
 		'password'=>md5($request->password),	
 		'status'=> 0]);

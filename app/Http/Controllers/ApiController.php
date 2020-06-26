@@ -14,7 +14,7 @@ class ApiController extends Controller
     public function LogoAction(Request $request){
 		return view('Logo');}
 	public function FeedAction(Request $request){
-		return view('Feed',['posts' => article::all()],['people' => User::all()]);}
+		return view('Feed',['posts' => article::all()]);}
 	public function AboutAction(Request $request){
 		return view('About',['posts' => article::all()]);}
 	public function DirectAction(Request $request){
@@ -43,6 +43,15 @@ class ApiController extends Controller
 		if(!is_null($srchppl)){
 			return view('Search',['srchppl' => $srchppl]);
 		}
+	}
+	public function PostcomAction(Request $request){
+		if($request->textcoment!=""){
+			$Coment = comment::create([
+				'user_id'=>Auth::user()->id,
+				'articke_id'=>$request->post_id,
+				'comment'=>$request->textcoment]);	
+		}
+		return view('Post');
 	}
 }
 

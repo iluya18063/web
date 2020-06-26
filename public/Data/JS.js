@@ -32,6 +32,5 @@ function namessage(){
 	document.location.href="Message";
 }
 function napost(elem){
-	sessionStorage.setItem('keypost',elem.firstChild.nextSibling.src);
-	document.location.href="Post";
+	document.location.href="Post?post_id="+elem;
 }

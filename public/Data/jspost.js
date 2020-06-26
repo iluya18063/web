@@ -1,10 +1,4 @@
-function postload(silka){
-	var post = document.createElement("img");
-	var spis = document.getElementById("spisok2");
-	post.src = silka;
-	post.classList.add("sampost");
-	spis.insertBefore(post,spis.firstChild);
-}
+
 function komentariy(){
 	var koment = document.createElement("div");
 	var ava = document.createElement("img");
@@ -24,5 +18,4 @@ function komentariy(){
 	koment.appendChild(comtext);
 	document.getElementById("spisok2").appendChild(koment);
 }
-window.onload = postload(sessionStorage.keypost);
-document.getElementById("komentbutton").addEventListener("click",komentariy);
+

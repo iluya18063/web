@@ -29,3 +29,4 @@ Route::get('/auth','authController@authorization');
 Route::get('/logout','authController@logout');
 Route::get('/Reg','authController@logoreg');
 Route::get('/registration','authController@registration');
+Route::get('/Postcom','ApiController@PostcomAction');
